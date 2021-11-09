@@ -2,7 +2,7 @@ import boto3
 
 ec2 = boto3.resource('ec2',region_name='us-east-1')
 
-def lambda_handler(event, context):
+def lambda_handler():
     # create filter for instances in running state
     filters = [
         {
@@ -22,6 +22,6 @@ def lambda_handler(event, context):
         RunningInstances.append(instance.id)
         print (instance.id)
         
-
+lambda_handler()
 
 print("this is python ec2")
