@@ -18,7 +18,7 @@ def lambda_handler():
     RunningInstances = []
 
     for instance in instances:
-        print(instance)
+        print(instance.__dict__)
         # for each instance, append to array and print instance id
         RunningInstances.append(instance.id)
         print (instance.id)
