@@ -26,7 +26,7 @@ def lambda_handler():
         print(instance.__dict__)
         # for each instance, append to array and print instance id
         RunningInstances.append(instance.id)
-        print (instance.id,instance.public_ip_address,instance.private_ip_address)
+        print (instance.id,instance.public_ip_address,instance.private_ip_address,instance.tags)
 
 lambda_handler()
 
