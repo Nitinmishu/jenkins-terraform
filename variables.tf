@@ -8,6 +8,11 @@ variable "key_name" {
   default     =  "jankins_demo1"
 }
 
+variable "instance_count" {
+  description = " create 4 instance type for ec2"
+  default = "4"
+}
+
 variable "instance_type" {
   description = "instance type for ec2"
   default     =  "t2.micro"
